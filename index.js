@@ -11,6 +11,18 @@ fetch(image_url).then((response) => response.json())
         dog_image.src = img
     })
 
+const start_predict = () => {
+    let username = user_input.value
+    // API Urls
+    let gender_url = `https://api.genderize.io/?name=${username}`;
+    
+    //Fetch gender
+    fetch(gender_url).then((response) => response.json())
+        .then((data) => {
+            gender.innerHTML = data['gender'].charAt(0).toUpperCase() + data['gender'].slice(1);
+        })
+}
+
 // Open PopUp to Display the Results
 const openPopup = () => {
     popup.classList.add('open-popup')
