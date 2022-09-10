@@ -91,3 +91,27 @@
 .mt-1 {
   margin-top: 1em;
 }
+
+/* Media Query */
+@media only screen and (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .poster {
+    width: 100%;
+    padding: 90px 0;
+  }
+  .prediction {
+    width: 100%;
+  }
+  .entry h1 {
+    font-size: 62px;
+  }
+  .prediction button {
+    padding: 13px 200px;
+  }
+  .prediction input {
+    padding: 13px 125px;
+  }
+}
