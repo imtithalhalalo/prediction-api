@@ -27,12 +27,12 @@ const start_predict = () => {
     //Fetch gender
     fetch(gender_url).then((response) => response.json())
         .then((data) => {
-            gender.innerHTML = data['gender'].charAt(0).toUpperCase() + data['gender'].slice(1);
+            gender.innerText = data['gender'].charAt(0).toUpperCase() + data['gender'].slice(1);
         })
     //Fetch age
     fetch(age_url).then((response) => response.json())
         .then((data) => {
-            age.innerHTML = data['age']
+            age.innerText = data['age']
         })
 
     //Fetch nationalities
@@ -42,7 +42,7 @@ const start_predict = () => {
             data['country'].forEach(country => {
                 countries += country['country_id'] + ' '
             });
-            nationality.innerHTML = countries
+            nationality.innerText = countries
         })
 }
 
