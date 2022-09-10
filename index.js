@@ -1,6 +1,6 @@
 let dog_image = document.getElementById("dog-image")
 const image_url = `https://dog.ceo/api/breeds/image/random`
-
+const predict_btn = document.querySelector("#predict_btn")
 const popup = document.getElementById("open")
 const close_btn = document.getElementById("close")
 
