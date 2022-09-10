@@ -79,6 +79,9 @@
 .result button {
   padding: 13px 50px;
 }
+.open-popup {
+  visibility: visible;
+}
 /* Utilities */
 .btn {
   font-size: 1em;
@@ -113,5 +116,8 @@
   }
   .prediction input {
     padding: 13px 125px;
+  }
+  .popup {
+    width: 90%;
   }
 }

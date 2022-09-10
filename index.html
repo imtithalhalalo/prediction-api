@@ -26,21 +26,21 @@
             placeholder="Enter your name here ..."
           />
           <div class="predict mt-1">
-            <button class="btn mt-1">Start</button>
+            <button class="btn mt-1" id="predict_btn">Start</button>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Popup the results for the user -->
-    <section class="popup">
+    <section class="popup" id="open">
       <img src="/images/pawprint.png" alt="logo" width="50px" height="50px" />
       <div class="result">
         <h2>Your Results</h2>
         <p class="mt-1">Gender : <span class="gender"></span></p>
         <p class="mt-1">Age: <span class="age"></span></p>
         <p class="mt-1">Nationality: <br /><span class="nationality"></span></p>
-        <button class="mt-1 btn">Thanks</button>
+        <button class="mt-1 btn" id="close">Thanks</button>
       </div>
     </section>
   </body>
