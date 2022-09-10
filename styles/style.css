@@ -61,7 +61,24 @@
 .neutral-pink {
   background-color: #f4eeed;
 }
+/* PopUp Result */
+.popup {
+  width: 30%;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  border-radius: 9px;
+  position: absolute;
+  padding: 10px 90px;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 25px 2px rgba(0, 0, 0, 0.434);
+  visibility: hidden;
+  text-align: center;
+}
 
+.result button {
+  padding: 13px 50px;
+}
 /* Utilities */
 .btn {
   font-size: 1em;
