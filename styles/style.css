@@ -91,6 +91,11 @@
   border-radius: 50px;
 }
 
+.btn:hover {
+    background-color: #61764bcc;
+    transition: 0.15s ease-in-out;
+  }
+
 .mt-1 {
   margin-top: 1em;
 }
